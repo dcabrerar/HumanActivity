@@ -30,7 +30,7 @@ async def server(websocket, path):
             
 # Iniciar el servidor WebSocket
 async def main():
-    async with websockets.serve(server, "localhost", 8765):
+    async with websockets.serve(server, "190.43.25.106", 8765):
         print("Servidor iniciado en el puerto 8765")
         await asyncio.Future()  # run forever
         
