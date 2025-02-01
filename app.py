@@ -11,7 +11,7 @@ st.write('Esta es una aplicación que recibe datos de sensores y predice la acti
 
 # Botón para iniciar la conexión WebSocket
 async def receive_data():
-    async with websockets.connect('ws://190.43.25.106:8765') as websocket:
+    async with websockets.connect('wss://190.43.25.106:8765') as websocket:
         while True:
             data = await websocket.recv()
             st.write(f'Actividad detectada: **{data}**')
